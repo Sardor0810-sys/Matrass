@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: var(--main--color);
 }
 ul{
     list-style: none;
@@ -22,9 +23,7 @@ a{
     --secondary--color: #F6FBFF;
     --hover--color: #273c75;
 }
-p, h1, h2, a, h3, h4, button{
-    color: var(--main--color);
-}
+
 button{
     cursor: pointer;
     background-color: #fff;
@@ -189,6 +188,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-top: 86px;
+    margin-bottom: 30px;
 }
 .main__link{
     opacity: 0.6;
@@ -202,5 +202,92 @@ body{
     opacity: 1;
     border-bottom: 1px solid var(--main--color);
 }
+.main__card{
+    padding: 30px;
+    background-color: var(--secondary--color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.main__sublist{
+    display: flex;
+    align-items: center;
+}
+.main__links{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #fff;
+    background: #FF6B6B;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+.main__img{
+    margin-top: 68px;
+    margin-right: 50px;
+}
+.main__subtitle{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.main__subitem{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.main__subitem span{
+    font-size: 16px;
+    line-height: 16px;
+    opacity: 0.6;
+    margin-bottom: 21px;
+    font-weight: 400;
+}
+.main__text{
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.6;
+    margin-bottom: 25px;
+    width: 600px;
+}
+.main__price{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.main__price span{
+    font-size: 16px;
+    line-height: 26px;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+.main__button{
+    position: relative;
+    width: 200px;
+    background-color: var(--secondary--color);
+}
 
+.main__button::after{
+    content: " ";
+    position: absolute;
+    background-image: url(../image/shopping-cart.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 14px;
+}
+.main__button:hover{
+    transform: scale(1.09);
+}
 
