@@ -184,6 +184,10 @@ body{
     line-height: 50px;
     text-align: center;
 }
+.main__title-2{
+    margin-top: 90px; 
+    margin-bottom: 60px;
+}
 .main__list{
     display: flex;
     justify-content: space-between;
@@ -290,4 +294,6 @@ body{
 .main__button:hover{
     transform: scale(1.09);
 }
-
+.aksiya{
+    background-color: #1FCA25;
+}
